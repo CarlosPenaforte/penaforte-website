@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+
+  overflow: hidden;
+
+  width: 100dvw;
+  height: 100dvh;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#infimo {
+  background-color: rgb(250, 250, 248);
+  color: rgb(60, 50, 50);
+}
