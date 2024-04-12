@@ -14,13 +14,6 @@ export default Infimo.default.defineComponent({
         }
     },
     methods: {
-        log(text) {
-            console.log(this.type);
-
-            console.log(text === 'typescript', text);
-
-            return text;
-        },
     },
     template: `
         <div class="p-1 bg-gray-900 hover:brightness-110 transition z-10 shadow-[0_0_4px_1px_rgba(0,0,0,0.3)] rounded">
