@@ -1,23 +1,23 @@
 export default Infimo.default.defineComponent({
     name: "Greetings",
     data: {
-        linkClass: "rounded-full p-2 w-9 h-9 border border-gray-100 text-gray-100 fill-gray-100",
+        linkClass: "rounded-full p-2 w-9 h-9 border border-gray-100 text-gray-100 fill-gray-100 hover:bg-[rgba(255,255,255,0.15)] transition-colors",
     },
     template: `
         <div class="flex flex-wrap items-center gap-4 py-4 px-6 w-full bg-gradient-to-r from-cyan-500 to-blue-500">
             <img
                 src="assets/images/profile.jpeg"
                 alt="Profile Image"
-                class="h-[160px] w-[160px] rounded-full border border-2 border-gray-100"
+                class="h-[160px] w-[160px] self-center mx-auto md:mx-0 rounded-full border border-2 border-gray-100"
             />
             <div class="flex flex-col">
                 <p class="text-xl mb-1 font-semibold">
                     Hello 👋,
                 </p>
-                <h1 class="text-6xl mb-1 font-bold text-blue-100">
+                <h1 class="text-4xl md:text-6xl mb-1 font-bold text-blue-100">
                     My name is Carlos Penaforte
                 </h1>
-                <p class="text-3xl mb-2 font-semibold text-gray-100">
+                <p class="text-2xl md:text-3xl mb-2 font-semibold text-gray-100">
                     I'm a Web Developer
                 </p>
                 <div id="contact-links" class="flex gap-2">
@@ -35,8 +35,10 @@ export default Infimo.default.defineComponent({
                             </g>
                         </svg>
                     </a>
-                    <a title="E-mail" href="mailto:dannhl08@gmail.com?subject=Website" target="_blank" :class="linkClass + ' material-symbols-outlined text-[18px]'">
-                        mail
+                    <a title="E-mail" href="mailto:dannhl08@gmail.com?subject=Website" target="_blank" :class="linkClass">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/>
+                        </svg>
                     </a>
                 </div>
             </div>

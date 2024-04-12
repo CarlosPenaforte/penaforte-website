@@ -9,7 +9,7 @@ new Infimo.default({
     methods: {
     },
     template: `
-        <main id="infimo" class="w-full h-full m-0 p-0 flex overflow-hidden">
+        <main id="infimo" class="w-full h-full m-0 p-0 flex flex-col md:flex-row overflow-hidden">
             <Navbar></Navbar>
             <section id="main-column" class="flex-1 h-full flex flex-col gap-4 overflow-y-auto bg-gray-700 text-gray-100">
                 <Greetings></Greetings>
