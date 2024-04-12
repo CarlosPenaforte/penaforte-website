@@ -4,17 +4,17 @@ export default Infimo.default.defineComponent({
         linkClass: "rounded-full p-2 w-9 h-9 border border-gray-100 text-gray-100 fill-gray-100 hover:bg-[rgba(255,255,255,0.15)] transition-colors",
     },
     template: `
-        <div class="flex flex-wrap items-center gap-4 py-4 px-6 w-full bg-gradient-to-r from-cyan-500 to-blue-500">
+        <div class="flex flex-wrap items-center gap-4 py-4 px-6 w-full bg-gradient-to-r from-[rgb(0,180,190)] to-[rgb(0,80,150)] bg-[length:400%_400%] animate-[background-slide_4s_ease-in-out_infinite]">
             <img
                 src="assets/images/profile.jpeg"
                 alt="Profile Image"
-                class="h-[160px] w-[160px] self-center mx-auto md:mx-0 rounded-full border border-2 border-gray-100"
+                class="h-[120px] w-[120px] md:h-[160px] md:w-[160px] self-center mx-auto md:mx-0 rounded-full border border-2 border-gray-100"
             />
             <div class="flex flex-col">
                 <p class="text-xl mb-1 font-semibold">
                     Hello 👋,
                 </p>
-                <h1 class="text-4xl md:text-6xl mb-1 font-bold text-blue-100">
+                <h1 class="text-4xl md:text-6xl mb-1 font-bold text-[rgba(250,250,255,0.8)]">
                     My name is Carlos Penaforte
                 </h1>
                 <p class="text-2xl md:text-3xl mb-2 font-semibold text-gray-100">

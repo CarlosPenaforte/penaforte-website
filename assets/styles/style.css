@@ -23,3 +23,17 @@ body {
   background-color: rgb(250, 250, 248);
   color: rgb(60, 50, 50);
 }
+
+@keyframes background-slide {
+  0% {
+    background-position: 0% 45%;
+  }
+
+  50% {
+    background-position: 45% 100%;
+  }
+
+  100% {
+    background-position: 0% 45%;
+  }
+}
