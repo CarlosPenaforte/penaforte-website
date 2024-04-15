@@ -2,10 +2,11 @@ import Navbar from "./components/Navbar.js";
 import About from "./components/About.js";
 import Skills from "./components/Skills.js";
 import Greetings from "./components/Greetings.js";
+import Projects from "./components/Projects.js";
 
 new Infimo.default({
     name: "App",
-    components: [Navbar, About, Skills, Greetings],
+    components: [Navbar, About, Skills, Greetings, Projects],
     methods: {
         scrollToView(section) {
             switch (section) {
@@ -23,7 +24,7 @@ new Infimo.default({
                     break;
                 default:
                     window.location.hash = "#/";
-                    document.querySelector("#main-column")?.scrollTo({ top:0, behavior: "smooth" });
+                    document.querySelector("#greetings-card")?.scrollIntoView({ behavior: "smooth" });
                     break;
             }
         }
@@ -36,6 +37,7 @@ new Infimo.default({
                 <div id="page-container" class="flex flex-col px-6 py-4 gap-4">
                     <About></About>
                     <Skills></Skills>
+                    <Projects></Projects>
                 </div>
             </section>
         </main>

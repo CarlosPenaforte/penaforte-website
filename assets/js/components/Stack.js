@@ -16,7 +16,7 @@ export default Infimo.default.defineComponent({
     methods: {
     },
     template: `
-        <div class="p-1 bg-gray-900 hover:brightness-110 transition z-10 shadow-[0_0_4px_1px_rgba(0,0,0,0.3)] rounded">
+        <div class="p-1 bg-gray-800 hover:brightness-110 hover:bg-gray-700 transition z-10 shadow-[0_0_4px_1px_rgba(0,0,0,0.2)] rounded-lg">
             <VueLogo i-if="type === 'vue'" :height="64" :width="64"></VueLogo>
             <TypescriptLogo i-if="type === 'typescript'" :height="64" :width="64"></TypescriptLogo>
             <ElmLogo i-if="type === 'elm'" :height="64" :width="64"></ElmLogo>

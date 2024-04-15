@@ -4,7 +4,7 @@ export default Infimo.default.defineComponent({
         linkClass: "rounded-full p-2 w-9 h-9 border border-gray-100 text-gray-100 fill-gray-100 hover:bg-[rgba(255,255,255,0.15)] transition-colors",
     },
     template: `
-        <div class="flex flex-wrap items-center gap-4 py-4 px-6 w-full bg-gradient-to-r from-[rgb(0,180,190)] to-[rgb(0,80,150)] bg-[length:400%_400%] animate-[background-slide_4s_ease-in-out_infinite]">
+        <div id="greetings-card" class="flex flex-wrap select-none items-center gap-4 py-4 px-6 w-full bg-gradient-to-r from-[rgb(0,180,190)] to-[rgb(0,80,150)] bg-[length:400%_400%] animate-[background-slide_4s_ease-in-out_infinite]">
             <img
                 src="assets/images/profile.jpeg"
                 alt="Profile Image"

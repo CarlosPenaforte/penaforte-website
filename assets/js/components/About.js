@@ -1,7 +1,7 @@
 export default Infimo.default.defineComponent({
     name: "About",
     template: `
-        <div id="about-section" class="flex flex-col bg-gray-200 text-gray-900 rounded py-4 px-6 justify-center">
+        <div id="about-section" class="flex flex-col bg-gray-200 text-gray-900 select-none rounded-lg py-4 px-6 justify-center">
             <h2 class="text-xl font-semibold mb-2">About me</h2>
             <p class="text-sm">
                 I'm a software developer with a passion for web development and a strong focus on front-end and full-stack development using modern technologies such as Vue.js, TypeScript and Node.js.
