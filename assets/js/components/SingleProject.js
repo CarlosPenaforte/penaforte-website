@@ -26,7 +26,7 @@ export default Infimo.default.defineComponent({
                 <img :src="image" loading="lazy" :alt="title" class="w-[150px] h-[150px] my-4 rounded-full">
             </figure>
             <h3 class="text-2xl font-semibold text-gray-500 mt-4 mb-2 mx-6">{{ title }}</h3>   
-            <p class="text-base m-0 mx-6 h-[80px]">
+            <p class="text-sm m-0 mx-6 h-[80px]">
                 {{ description }}
             </p>
             <div class="flex items-center w-full px-6 py-4 mt-4 border-t border-gray-300">
