@@ -8,23 +8,31 @@ new Infimo.default({
     name: "App",
     components: [Navbar, About, Skills, Greetings, Projects],
     methods: {
+        scrollToSection(id) {
+            const mainColumn = document.querySelector("#main-column");
+            const el = document.querySelector("#" + id);
+            const topDistance = Math.max(el.offsetTop - 70, 0);
+            el && mainColumn 
+                ? mainColumn.scrollTo({ top: topDistance, behavior: "smooth" })
+                : document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+        },
         scrollToView(section) {
             switch (section) {
                 case "about":
                     window.location.hash = "#/about";
-                    document.querySelector("#about-section")?.scrollIntoView({ behavior: "smooth" });
+                    this.scrollToSection("about-section");
                     break;
                 case "skills":
                     window.location.hash = "#/skills";
-                    document.querySelector("#skills-section")?.scrollIntoView({ behavior: "smooth" });
+                    this.scrollToSection("skills-section");
                     break;
                 case "projects":
                     window.location.hash = "#/projects";
-                    document.querySelector("#projects-section")?.scrollIntoView({ behavior: "smooth" });
+                    this.scrollToSection("projects-section");
                     break;
                 default:
                     window.location.hash = "#/";
-                    document.querySelector("#greetings-card")?.scrollIntoView({ behavior: "smooth" });
+                    this.scrollToSection("greetings-card");
                     break;
             }
         }
