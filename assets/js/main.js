@@ -11,7 +11,10 @@ new Infimo.default({
         scrollToSection(id) {
             const mainColumn = document.querySelector("#main-column");
             const el = document.querySelector("#" + id);
-            const topDistance = Math.max(el.offsetTop - 70, 0);
+            
+            const topSpacing = window.innerWidth > 768 ? 0 : 70;
+            const topDistance = Math.max(el.offsetTop - topSpacing, 0);
+
             el && mainColumn 
                 ? mainColumn.scrollTo({ top: topDistance, behavior: "smooth" })
                 : document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
