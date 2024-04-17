@@ -44,13 +44,13 @@ export default Infimo.default.defineComponent({
         }
     },
     template: `
-        <div id="projects-section" class="flex flex-col bg-gray-200 text-gray-900 select-none rounded-lg py-4 px-6 justify-center">
+        <div id="projects-section" class="flex flex-col bg-gray-200 text-gray-900 select-none rounded-lg px-3 py-3 md:py-4 md:px-6 justify-center">
             <h2 class="text-2xl text-gray-800 font-semibold mb-2">Projects</h2>
             <p class="text-base">
                 Here are some interesting projects I worked on recently. You can find more of my work on my <a href="https://github.com/cpenaforte" target="_blank">GitHub profile</a>.
             </p>
             <div class="flex gap-4 mt-4 flex-wrap">
-                <div i-for="item in projects">
+                <div i-for="item in projects" class="w-full min-[400px]:w-[360px]">
                     <SingleProject :title="item.title" :description="item.description" :image="item.image" :github="item.githubLink" :language="item.language"></SingleProject>
                 </div>
             </div>

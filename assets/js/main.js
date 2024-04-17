@@ -45,7 +45,7 @@ new Infimo.default({
             <Navbar @click-nav-link="scrollToView"></Navbar>
             <section id="main-column" class="flex-1 h-full flex flex-col gap-4 overflow-y-auto bg-gray-700 text-gray-100">
                 <Greetings></Greetings>
-                <div id="page-container" class="flex flex-col px-6 py-4 gap-4">
+                <div id="page-container" class="flex flex-col px-3 md:px-6 py-3 md:py-4 gap-4">
                     <About></About>
                     <Skills></Skills>
                     <Projects></Projects>

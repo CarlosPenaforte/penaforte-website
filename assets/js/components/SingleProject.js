@@ -51,7 +51,7 @@ export default Infimo.default.defineComponent({
     },
     template: `
         <div
-            class="flex flex-col justify-center p-0 shadow-[0_0_4px_1px_rgba(0,0,0,0.2)] text-gray-900 select-none bg-gray-100 w-[294px] rounded-lg"
+            class="flex flex-col justify-center p-0 shadow-[0_0_4px_1px_rgba(0,0,0,0.2)] text-gray-900 select-none bg-gray-100 w-full rounded-lg"
         >
             <figure class="shink-0 flex items-center justify-center w-full bg-gray-800 rounded-t-lg">
                 <img :src="image || languageToLogoPath(language)" loading="lazy" :alt="title" class="w-[150px] h-[150px] my-4">
