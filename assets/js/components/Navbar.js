@@ -11,7 +11,7 @@ export default Infimo.default.defineComponent({
     template: `
         <nav 
             id="header-container"
-            class="flex md:flex-col h-[70px] md:h-auto md:w-[90px] bg-gray-800 text-gray-100 items-center px-3 md:px-6 md:px-0 py-0 md:py-4 z-20 justify-between md:justify-normal md:gap-8 shadow-[0_0_6px_0_rgba(255,255,255,0.2)]"
+            class="flex md:flex-col h-[70px] md:h-auto md:w-[90px] bg-gray-800 text-gray-100 items-center px-3 md:px-0 py-0 md:py-4 z-20 justify-between md:justify-normal md:gap-8 shadow-[0_0_6px_0_rgba(255,255,255,0.2)]"
             role="navigation"
             aria-label="main navigation"
         >
