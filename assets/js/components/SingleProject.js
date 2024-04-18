@@ -56,7 +56,7 @@ export default Infimo.default.defineComponent({
             <figure class="shink-0 flex items-center justify-center w-full bg-gray-800 rounded-t-lg">
                 <img :src="image || languageToLogoPath(language)" loading="lazy" :alt="title" class="w-[150px] h-[150px] my-4">
             </figure>
-            <h3 class="text-xl font-semibold text-gray-500 mt-4 mb-2 mx-6">{{ title }}</h3>   
+            <h3 class="text-2xl font-semibold text-gray-500 mt-4 mb-2 mx-6">{{ title }}</h3>   
             <p class="text-sm m-0 mx-6 h-[80px]">
                 {{ description }}
             </p>

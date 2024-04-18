@@ -45,7 +45,12 @@ export default Infimo.default.defineComponent({
     },
     template: `
         <div id="projects-section" class="flex flex-col bg-gray-200 text-gray-900 select-none rounded-lg px-3 py-3 md:py-4 md:px-6 justify-center">
-            <h2 class="text-2xl text-gray-800 font-semibold mb-2">Projects</h2>
+            <div class="height-[50px] flex items-center gap-1 text-gray-800 mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" class="fill-[inherit]">
+                    <path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80h640v-400H160v400Zm140-40-56-56 103-104-104-104 57-56 160 160-160 160Zm180 0v-80h240v80H480Z"/>
+                </svg>
+                <h2 class="text-2xl font-semibold">Projects</h2>
+            </div>
             <p class="text-base">
                 Here are some interesting projects I worked on recently. You can find more of my work on my <a href="https://github.com/cpenaforte" target="_blank">GitHub profile</a>.
             </p>
