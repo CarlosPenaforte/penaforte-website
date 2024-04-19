@@ -7,7 +7,7 @@ import Projects from "./components/Projects.js";
 new Infimo.default({
     name: "App",
     components: [Navbar, About, Skills, Greetings, Projects],
-    async mounted() {
+    mounted() {
         const hash = window.location.hash;
         switch (hash) {
             case "#/about":
