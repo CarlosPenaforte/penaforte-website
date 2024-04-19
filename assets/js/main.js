@@ -7,6 +7,23 @@ import Projects from "./components/Projects.js";
 new Infimo.default({
     name: "App",
     components: [Navbar, About, Skills, Greetings, Projects],
+    async mounted() {
+        const hash = window.location.hash;
+        switch (hash) {
+            case "#/about":
+                setTimeout(() => this.scrollToSection("about-section"), 200);
+                break;
+            case "#/skills":
+                setTimeout(() => this.scrollToSection("skills-section"), 200);
+                break;
+            case "#/projects":
+                setTimeout(() => this.scrollToSection("projects-section"), 200);
+                break;
+            default:
+                setTimeout(() => this.scrollToSection("greetings-card"), 200);
+                break;
+        }
+    },
     methods: {
         scrollToSection(id) {
             const mainColumn = document.querySelector("#main-column");
