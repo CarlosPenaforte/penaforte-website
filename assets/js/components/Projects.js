@@ -51,9 +51,13 @@ export default Infimo.default.defineComponent({
                 </svg>
                 <h2 class="text-2xl font-semibold">Projects</h2>
             </div>
-            <p class="text-base">
-                Here are some interesting projects I worked on recently. You can find more of my work on my <a href="https://github.com/cpenaforte" target="_blank">GitHub profile</a>.
-            </p>
+            <div class="flex gap-1 items-center">
+                <p class="text-base">
+                    Here are some interesting projects I worked on recently. You can find more of my work on my
+                </p>
+                <a href="https://github.com/cpenaforte" target="_blank" class="text-[rgb(0,150,220)] hover:text-[rgb(50,160,240)] hover:underline active:text-[rgb(0,150,220)]">GitHub profile</a>
+                .
+            </div>
             <div class="flex gap-4 mt-4 flex-wrap">
                 <div i-for="item in projects" class="w-full min-[400px]:w-[360px]">
                     <SingleProject :title="item.title" :description="item.description" :image="item.image" :github="item.githubLink" :language="item.language"></SingleProject>

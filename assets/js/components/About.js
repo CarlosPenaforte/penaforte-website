@@ -9,13 +9,13 @@ export default Infimo.default.defineComponent({
                 <h2 class="text-2xl font-semibold">About me</h2>
             </div>
             <p class="text-base">
-                I'm a software developer with a passion for web development and a strong focus on front-end and full-stack development using modern technologies such as Vue.js, TypeScript and Node.js.
+                As a software developer, I have a strong passion for web development, with a particular focus on front-end and full-stack development. I utilize modern technologies such as Vue.js, TypeScript, and Node.js in my projects.
             </p>
             <p class="text-base">
-                I'm always looking for new opportunities to learn and grow as a developer. I'm a challenge-lover, full of creativity and great willing to deliver a great job.
+                I'm constantly seeking new opportunities to expand my skills and grow as a developer. I thrive on challenges, bring a wealth of creativity to my work, and am committed to delivering high-quality results.
             </p>
             <p class="text-base">
-                Bring me your ideas for a website or web application and I'll make them come to life with a beautiful and responsive design, a clean and maintainable codebase and a great user experience.
+                Share your ideas for a website or web application with me, and I'll bring them to life. I'll create a beautiful, responsive design, maintain a clean codebase, and ensure a fantastic user experience.
             </p>
         </div>
     `
