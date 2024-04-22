@@ -71,7 +71,7 @@ export default Infimo.default.defineComponent({
     template: `
         <div class="p-1 bg-gray-800 hover:brightness-110 hover:bg-gray-700 transition z-10 shadow-[0_0_4px_1px_rgba(0,0,0,0.2)] rounded-lg">
             <a :title="typeToTitle(type)" :href="typeToLink(type)" target="_blank">
-                <img :src="typeToLogoPath(type)" class="w-[64px] h-[64px]">
+                <img :src="typeToLogoPath(type)" loading="lazy" :alt="typeToTitle(type)" class="w-[64px] h-[64px]">
             </a>
         </div>
     `
