@@ -9,20 +9,7 @@ new Infimo.default({
     components: [Navbar, About, Skills, Greetings, Projects],
     mounted() {
         const hash = window.location.hash;
-        switch (hash) {
-            case "#/about":
-                setTimeout(() => this.scrollToSection("about-section"), 200);
-                break;
-            case "#/skills":
-                setTimeout(() => this.scrollToSection("skills-section"), 200);
-                break;
-            case "#/projects":
-                setTimeout(() => this.scrollToSection("projects-section"), 200);
-                break;
-            default:
-                setTimeout(() => this.scrollToSection("greetings-card"), 200);
-                break;
-        }
+        if (hash.includes("#/")) setTimeout(() => scrollToView(hash.replace("#/", "")), 200);
     },
     methods: {
         scrollToSection(id) {
