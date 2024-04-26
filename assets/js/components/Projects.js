@@ -53,7 +53,7 @@ export default Infimo.default.defineComponent({
                 <h2 class="text-2xl font-semibold">Projects</h2>
             </div>
             <p class="text-base">
-                <span class="text-[inherit]">Here are some interesting projects I worked on recently. You can find more of my work on my </span><a href="https://github.com/cpenaforte" target="_blank" title="Go to Github profile" class="text-[rgb(0,80,120)] hover:text-[rgb(20,120,160)] hover:underline active:text-[rgb(0,80,120)]">GitHub profile</a>.
+                <span class="text-[inherit]">Here are some interesting projects I worked on recently. You can find more of my work on my </span><a href="https://github.com/cpenaforte" target="_blank" title="Go to Github profile" class="font-semibold text-[rgb(0,100,180)] hover:text-[rgb(50,120,210)] hover:underline active:text-[rgb(0,100,180)]">GitHub profile</a>.
             </p>
             <div class="flex gap-4 mt-4 flex-wrap">
                 <div i-for="item in projects" class="w-full min-[400px]:w-[360px]">
