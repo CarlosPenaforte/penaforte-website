@@ -23,6 +23,8 @@ export default Infimo.default.defineComponent({
                     return "assets/images/logos/elmLogo.svg";
                 case "java":
                     return "assets/images/logos/javaLogo.svg";
+                case "rust":
+                    return "assets/images/logos/rustLogo.svg"
                 default:
                     return "";
             }
@@ -43,6 +45,8 @@ export default Infimo.default.defineComponent({
                     return "Elm";
                 case "java":
                     return "Java";
+                case "rust":
+                    return "Rust";
                 default:
                     return "";
             }
@@ -63,15 +67,17 @@ export default Infimo.default.defineComponent({
                     return "https://elm-lang.org/";
                 case "java":
                     return "https://www.java.com/";
+                case "rust":
+                    return "https://www.rust-lang.org/";
                 default:
                     return "";
             }
         }
     },
     template: `
-        <div class="p-1 bg-gray-800 hover:brightness-110 hover:bg-gray-700 transition z-10 shadow-[0_0_4px_1px_rgba(0,0,0,0.2)] rounded-lg">
+        <div class="p-1 bg-gray-100 hover:brightness-110 transition z-10 shadow-[0_0_4px_1px_rgba(0,0,0,0.2)] rounded-lg">
             <a :title="typeToTitle(type)" :href="typeToLink(type)" target="_blank">
-                <img :src="typeToLogoPath(type)" loading="lazy" :alt="typeToTitle(type)" class="w-[64px] h-[64px]">
+                <img :src="typeToLogoPath(type)" loading="lazy" :alt="typeToTitle(type)" class="w-[64px] h-[64px] drop-shadow-[0_0_2px_rgba(0,0,0,0.2)]">
             </a>
         </div>
     `

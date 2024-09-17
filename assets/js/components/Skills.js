@@ -4,7 +4,7 @@ export default Infimo.default.defineComponent({
     name: "Skills",
     components: [Stack],
     data: {
-        stacks: ["vue", "typescript", "javascript", "node", "python", "elm", "java"],
+        stacks: ["vue", "typescript", "javascript", "node", "python", "elm", "java", "rust"],
     },
     template: `
         <div id="skills-section" class="flex flex-col bg-gray-200 text-gray-900 select-none rounded-lg py-3 px-3 md:py-4 md:px-6 justify-center">
